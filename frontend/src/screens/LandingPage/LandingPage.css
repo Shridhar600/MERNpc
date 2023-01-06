@@ -1,0 +1,41 @@
+.main{
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    background-color:#232b2b;
+    background-position: center;
+    background-size: cover; 
+}
+.introText{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 95px;
+}
+.subtitle{
+    font-size: 25px;
+    padding-top:10px;
+}
+.landingbutton{
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+}
+.buttons{
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+
+}
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 100px;
+    }
+    .landingbutton{
+        width: 190px;
+        height: 100px;
+    }
+}
