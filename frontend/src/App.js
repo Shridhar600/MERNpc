@@ -1,17 +1,18 @@
 import "./App.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import LandingPage from "./screens/LandingPage/LandingPage";
+import{ BrowserRouter, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <main >
-        <LandingPage />
+        <Route />
       </main>
       <Footer />
-    </>
-  );
+    </BrowserRouter>
+    );
 }
 
 export default App;
