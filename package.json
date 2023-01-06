@@ -1,0 +1,23 @@
+{
+  "name": "mernpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shridhar600/MERNpc.git"
+  },
+  "author": "Shridhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shridhar600/MERNpc/issues"
+  },
+  "homepage": "https://github.com/Shridhar600/MERNpc#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
