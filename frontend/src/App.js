@@ -1,11 +1,13 @@
-import "./App.css";
-
+import './App.css';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 function App() {
   return (
-  <div>
-    <div className="App"><h1>hello world</h1></div>;
-  </div>
-  )
+    <>
+    <Header/>
+    <Footer/>
+    </>
+  );
 }
 
 export default App;
