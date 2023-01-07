@@ -5,12 +5,12 @@ import "./LandingPage.css";
 const LandingPage = () => {
   return (
     <div className="main">
-      <Container fluid>
+      <Container>
         <Row>
           <div className="introText">
             <div>
               <h1 className="title">Welcome to Notes</h1>
-              <p className="subtitle"> One Stop for all your notes.</p>
+              <p className="subtitle"> One stop for all your notes.</p>
               <div className="buttons">
                 <a href="/login">
                 <Button size="lg" className="landingbutton btn1 btn btn-outline-dark ">Login</Button>

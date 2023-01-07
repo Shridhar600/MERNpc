@@ -10,9 +10,12 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" component={<LandingPage />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/mynotes" element={<MyNotes />} />
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </>
