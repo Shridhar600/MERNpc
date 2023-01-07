@@ -1,5 +1,5 @@
-import React from "react";
-import { Accordion, Badge, Button } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Badge, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import MainScreen from "../../components/MainScreen";
 import notes from "../../data/notes";
@@ -9,6 +9,11 @@ const MyNotes = () => {
     if (window.confirm("Are you sure you want to delete this note ?")) {
     }
   };
+  
+  useEffect(() => {
+
+  },[])
+
   return (
     <MainScreen title="Welcome Shridhar">
       <Link to="createnote">
