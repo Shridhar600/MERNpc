@@ -1,17 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Badge, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import MainScreen from "../../components/MainScreen";
-import notes from "../../data/notes";
+
+import axios from "axios";
 
 const MyNotes = () => {
+
+  const [notes, setNotes] = useState([]);
+
   const deleteHandler = (id) => {
     if (window.confirm("Are you sure you want to delete this note ?")) {
     }
   };
-  
-  useEffect(() => {
+  const fetechNotes = async () => {
+    const {data}= await axios.get("/api/notes");
 
+    setNotes(data);
+  }
+  useEffect(() => {
+    fetechNotes();
   },[])
 
   return (
@@ -26,7 +34,7 @@ const MyNotes = () => {
         </Button>
       </Link>
       {notes.map((note) => (
-        <div className="card   mb-3 " style={{ margin: 20 }}>
+        <div className="card   mb-3 " style={{ margin: 20 }} key={note._id}>
           <div
             className="card-header text-white bg-dark"
             style={{ display: "flex" }}
